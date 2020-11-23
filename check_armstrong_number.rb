@@ -70,7 +70,7 @@ class CheckArmstrongNumber
       x.report("Armstrong Number Memory Usage") {validate_armstrong_number}
     end
     puts @result
-    if @is_valid
+    unless @is_valid
       puts "Closest Highest Number is #{@closest_highest_number}"
       puts "Closest Smallest Number is #{@closest_smaller_number}"
     end
